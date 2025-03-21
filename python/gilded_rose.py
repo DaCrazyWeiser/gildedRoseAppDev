@@ -15,6 +15,7 @@ class GildedRose(object):
             item.update()
 
 class Item:
+    """ Create each item instance. """
     def __init__(self, name, sell_in, quality):
         self.name = name
         self.sell_in = sell_in
@@ -56,7 +57,6 @@ class BackstagePass(Item):
 
         print(f"After update: {self.name} | Sell In: {self.sell_in} | Quality: {self.quality}")
 
-# Prob don't even need this.
 class Sulfuras(Item):
     """Legendary item - does not decrease in quality or sell_in."""
     def update(self):
